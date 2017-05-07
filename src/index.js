@@ -1,6 +1,6 @@
 import { cubicOut } from 'eases-jsnext';
 
-export default function fade(
+export default function fly(
 	node,
 	{ delay = 0, duration = 400, easing = cubicOut, x = 0, y = 0 }
 ) {
