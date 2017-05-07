@@ -1,6 +1,8 @@
 # svelte-transitions-fly
 
-Fly transition plugin for [Svelte](https://svelte.technology).
+Fly transition plugin for [Svelte](https://svelte.technology). [Demo](https://svelte.technology/repl?gist=939fba2cf67f914ee3c87ffb16f5257f)
+
+![fly-hello](https://cloud.githubusercontent.com/assets/1162160/25782007/fe173098-330f-11e7-9071-68d464ca72f0.gif)
 
 ## Usage
 
@@ -47,7 +49,7 @@ Then add the plugin to your Svelte component's exported definition:
 You can also specify `delay` and `duration` parameters, which default to `0` and `400` respectively, and a custom `easing` function (which should live on your `helpers`):
 
 ```html
-<div in:fly='{delay: 250, duration: 1000, easing: elasticOut}'>
+<div in:fly='{x: -200, delay: 250, duration: 1000, easing: elasticOut}'>
   wheee!!!!
 </div>
 
