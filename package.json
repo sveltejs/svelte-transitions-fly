@@ -1,6 +1,6 @@
 {
   "name": "svelte-transitions-fly",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fly transition plugin for Svelte",
   "main": "index.js",
   "module": "module.js",

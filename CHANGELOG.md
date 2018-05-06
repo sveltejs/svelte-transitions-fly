@@ -1,5 +1,9 @@
 # svelte-transitions-fly changelog
 
+## 1.0.4
+
+* Err... respect existing *lack* of transforms
+
 ## 1.0.3
 
 * Respect existing transforms

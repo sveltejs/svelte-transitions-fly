@@ -7,7 +7,9 @@ export default function fly(node, {
 	x = 0,
 	y = 0
 }) {
-	const { opacity, transform } = getComputedStyle(node);
+	const style = getComputedStyle(node);
+	const opacity = +style.opacity;
+	const transform = style.transform === 'none' ? '' : style.transform;
 
 	return {
 		delay,
