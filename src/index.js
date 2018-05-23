@@ -4,6 +4,7 @@ export default function fly(node, {
 	delay = 0,
 	duration = 400,
 	easing = cubicOut,
+	fade = true,
 	x = 0,
 	y = 0
 }) {
@@ -13,10 +14,14 @@ export default function fly(node, {
 
 	return {
 		delay,
+		fade,
 		duration,
 		easing,
 		css: t => `
 			transform: ${transform} translate(${(1 - t) * x}px, ${(1 - t) * y}px);
-			opacity: ${t * opacity}`
+			${fade && `
+				opacity: ${t * opacity}
+			`}
+		`
 	};
 }
