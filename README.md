@@ -1,3 +1,5 @@
+## DEPRECATED — As of Svelte v3, transitions are built into the main package
+
 # svelte-transitions-fly
 
 Fly transition plugin for [Svelte](https://svelte.technology). [Demo](https://svelte.technology/repl?version=2.5.0&gist=07f809dba875d3c4f85ecd47a044ec3e)
